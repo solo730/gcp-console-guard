@@ -1,0 +1,13 @@
+{
+  "name": "gcp-console-guard",
+  "version": "1.0.0",
+  "description": "Read-only GCP Console navigator and security helper",
+  "scripts": {
+    "build": "vite build && powershell -NoProfile -Command \"Copy-Item public\\* dist\\ -Recurse -Force\""
+  },
+  "devDependencies": {
+    "vite": "^7.0.0",
+    "typescript": "^5.0.0",
+    "@types/chrome": "^0.0.268"
+  }
+}
